@@ -1,0 +1,26 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: mysql8
+    ports:
+      - "127.0.0.1:3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+    restart: always
+
+  postgres:
+    image: postgres:18-alpine
+    container_name: postgres18
+    ports:
+      - "127.0.0.1:5432:5432"
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    restart: always
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis7
+    ports:
+      - "127.0.0.1:6379:6379"
+    restart: always
