@@ -1,8 +1,10 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "autoupdate": false,
-  "model": "opencode/gemini-3-flash",
-  "small_model": "opencode/big-pickle",
+  "lsp": true,
+  "formatter": true,
+  "model": "opencode/gemini-3.5-flash",
+  "small_model": "opencode/gemini-3-flash",
   "mcp": {
     "context7": {
       "enabled": true,
@@ -17,7 +19,7 @@
   },
   "agent": {
     "title": {
-      "model": "opencode/big-pickle",
+      "model": "opencode/gemini-3-flash",
     },
   },
 }
